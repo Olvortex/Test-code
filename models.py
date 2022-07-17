@@ -1,7 +1,7 @@
 from sqlalchemy import MetaData, Table, Integer, String, \
     Column, DateTime, ForeignKey, Numeric, SmallInteger, Boolean
 
-from db.base import Base, engine
+from base import Base, engine
 
 
 class GroupsDataEntry(Base):
@@ -9,6 +9,3 @@ class GroupsDataEntry(Base):
 
     group_id = Column(Integer, primary_key = True)
     active_flag = Column(Boolean)
-
-
-Base.metadata.create_all(engine)
