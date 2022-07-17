@@ -1,7 +1,6 @@
-from sqlalchemy import MetaData, Table, Integer, String, \
-    Column, DateTime, ForeignKey, Numeric, SmallInteger, Boolean
+from sqlalchemy import Integer, Column, Boolean
 
-from base import Base, engine
+from base import Base
 
 
 class GroupsDataEntry(Base):
